@@ -1,14 +1,7 @@
-dir = File.dirname(__FILE__)
-$LOAD_PATH.unshift "#{dir}/../lib"
-
-predicated_project_dir = File.expand_path("../predicated")
-if File.exist?(predicated_project_dir) # if predicated project is a sibling of this project
-  puts "using predicated from #{predicated_project_dir}"
-  $LOAD_PATH.unshift "#{predicated_project_dir}/lib"
-  require "predicated"
-end
-
 require "rubygems"
+require "bundler"
+Bundler.require(:test)
+
 require "minitest/spec"
 require "minitest/unit"
 require "pp"

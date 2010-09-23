@@ -1,3 +1,13 @@
+PATH
+  remote: .
+  specs:
+    wrong (0.3.3)
+      diff (>= 0.3.6)
+      diff-lcs (>= 1.1.2)
+      predicated (~> 0.2.1)
+      ruby2ruby (>= 1.2.4)
+      ruby_parser (>= 2.0.4)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -19,11 +29,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  diff
-  diff-lcs
+  diff (>= 0.3.6)
+  diff-lcs (>= 1.1.2)
   minitest
   predicated (~> 0.2.1)
   rspec (~> 1)
-  ruby2ruby
-  ruby_parser
+  ruby2ruby (>= 1.2.4)
+  ruby_parser (>= 2.0.4)
   test-unit
+  wrong!

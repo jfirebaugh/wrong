@@ -1,12 +1,9 @@
 source :gemcutter
 
-gem "ruby_parser"
-gem "ruby2ruby"
+gemspec
 
-gem "minitest"
-gem "test-unit"
-gem "rspec", '~> 1'
-
-gem "predicated", '~> 0.2.1'
-gem "diff"
-gem "diff-lcs"
+group :test do
+  gem "minitest"
+  gem "test-unit"
+  gem "rspec", '~> 1'
+end

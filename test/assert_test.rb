@@ -100,7 +100,9 @@ describe "advanced assert features" do
     assert { e.message =~ /x is 10/ }
   end
 
-  xit "can parse a here doc defined inside the block" do
+  it "can parse a here doc defined inside the block" do
+    skip
+
     # todo: test in Chunk too
     assert { "123\n456" == <<-TEXT
 123
@@ -109,7 +111,9 @@ describe "advanced assert features" do
     }
   end
 
-  xit "can parse a here doc defined outside the block" do
+  it "can parse a here doc defined outside the block" do
+    skip
+
     # todo: test in Chunk too
     assert { "123\n456" == <<-TEXT }
 123

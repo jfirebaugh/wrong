@@ -74,7 +74,9 @@ a\\rcc
 
   end
 
-  xit "elides really long matching sections" do
+  it "elides really long matching sections" do
+    skip
+
     left = "x"*100 + "ab" + "y"*100 + "AB" + "z"*100 
     right = "x"*100 + "acc" + "y"*100 + "ACC" + "z"*100 
     

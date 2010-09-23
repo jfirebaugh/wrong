@@ -24,25 +24,6 @@ def get_error
   error
 end
 
-class MiniTest::Unit::TestCase
-end
-
-module Kernel
-  def xdescribe(str)
-    puts "x'd out describe \"#{str}\""
-  end
-end
-
-class MiniTest::Spec
-  include MiniTest::Assertions
-  
-  class << self
-    def xit(str)
-      puts "x'd out test \"#{str}\""
-    end
-  end
-end
-
 # dummy class for use by tests
 class Color
   attr_reader :name
